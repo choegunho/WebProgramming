@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>아이디와 비밀번호, 요청사항 입력</title>
+    </head>
+    <body>
+        <h3>문자열, 암호 입력및 텍스트 영역</h3>
+        <form method = "post" action ="form_app.js">
+            아이디: &nbsp;&nbsp;&nbsp;<input type="text" name = "id" value= "...ID입력..."><br>
+            비밀번호: <input type="password" name = "pwd">
+            <p>요청사항:<br>
+                <textarea name="comment" cols="40" rows="5">전달하실 내용을 적으세요</textarea>
+            </p>
+            직업:
+            <select name="job" size="1">
+                <option value="student" selected>학생</option>
+                <option value="company">회사원</option>
+                <option value="teacher">교사</option>
+                <option value="sales">자영업</option>
+                <option value="others">기타</option>
+            </select><br>
+            직업:
+            <select name="job" size="4"multiple>
+                <option value="student" selected>학생</option>
+                <option value="company">회사원</option>
+                <option value="teacher">교사</option>
+                <option value="sales">자영업</option>
+                <option value="others">기타</option>
+            </select>
+            <p>취미(중복선택):
+                <input type="checkbox" name="hobby" value="read"/>독서
+                <input type="checkbox" name="hobby" value="movie" checked/>영화
+                <input type="checkbox" name="hobby" value="music"/>음악
+                <input type="checkbox" name="hobby" value="sports"/>스포츠
+            </p>
+            <hr>
+            <input type="submit" value="전송하기"/>&nbsp;
+            <input type="reset" value="초기화"/>&nbsp;
+            <input type="button" value="확인하기"onClick="alert('입력값 확인')"/>&nbsp;
+            <input type="image" src="/mid/flower.jpg" alt="전송버튼"/>&nbsp;<br>
+            파일 업로드하기<br>
+            <input type="file" name="myfile"/>
+            성별:<label for="male">남성</label>
+                <input type="radio" name="sex" id="male" value="male">
+                <label for="female">여성</label>
+                <input type="radio" name="sex" id="female" value="female">
+         </form>
+    </body>
+</html>
